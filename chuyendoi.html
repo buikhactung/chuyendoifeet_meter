@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var a = prompt("Nhap vao so can chuyen doi: ")
+    var unit = parseInt(prompt("Nhap vao don vi. neu 1 footToMeter, 2 meterToFeet"))
+    var result;
+    var kq;
+
+    function footToMeter() {
+        return 3.279 * a;
+    }
+
+    function meterToFoot() {
+        return 0.305 * a;
+    }
+
+    if (unit === 1) {
+        result = footToMeter()
+    } else {
+        result = meterToFoot()
+    }
+    document.write(result)
+</script>
+</body>
+</html>
